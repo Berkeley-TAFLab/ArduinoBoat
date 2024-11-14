@@ -14,14 +14,15 @@
 unsigned long currentTime = 0;
 float hard_iron[3] = {-33.51, 10.21, -41.31};
 float soft_iron[3][3] = {
-  {0.989, 0.038, -0.014},
-  {0.038, 1.009, -0.003},
-  {-0.014, -0.003, 1.003}
+    {0.989, 0.038, -0.014},
+    {0.038, 1.009, -0.003},
+    {-0.014, -0.003, 1.003}
 };
+
 
 // SDCard sd(53);
 Atmosphere atm;
-WindVane windVane(-100, 1000, 2100, 3100);
+WindVane windVane(-200, 900, 1900, 2900);
 Sail sail(8);
 Rudder rudder(10);
 ESC esc(9);
@@ -29,7 +30,7 @@ Magnetometer magnetometer(hard_iron, soft_iron);
 GPSList gpsList;
 GPS gps;
 Control control(&windVane, &rudder, &esc, &magnetometer, &gpsList, &gps);
-Mesh mesh(1, "0013A200423EEE40", &atm, &windVane, &sail, &rudder, &esc, &magnetometer, &gpsList, &gps, &control);
+Mesh mesh(2, "0013A20041BEEF1E", &atm, &windVane, &sail, &rudder, &esc, &magnetometer, &gpsList, &gps, &control);
 
 void setup() {
   Serial.begin(115200);
@@ -37,7 +38,7 @@ void setup() {
   // sd.start();
   atm.start();
   windVane.start();
-  sail.start(180);
+  sail.start(270);
   rudder.start();
   esc.start();
   magnetometer.start();
@@ -52,7 +53,6 @@ void loop() {
 
   magnetometer.updateHeading();
   atm.updateData();
-
   windVane.getAngle(sail.currentSailPos);
   if (control.stationKeeping) {
     sail.calculateStationPos(windVane.currentAngle);

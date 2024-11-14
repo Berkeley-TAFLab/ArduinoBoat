@@ -45,6 +45,8 @@ void Magnetometer::updateHeading()
 
     heading = atan2(final[1], final[0]) * 180 / PI;
     heading += mag_decl;
+    heading += 180;
     if (heading < 0) heading += 360;
     if (heading > 360) heading -= 360;
+    Serial.println(heading);
 }
