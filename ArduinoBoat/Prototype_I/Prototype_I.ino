@@ -12,11 +12,11 @@
 #include <Mesh.h>
 
 unsigned long currentTime = 0;
-float hard_iron[3] = {-32.69, 33.6, -9.9};
+float hard_iron[3] = {-10.09, -8.15, -26.11};
 float soft_iron[3][3] = {
-    {1.002, 0.047, -0.014},
-    {0.047, 1.009, -0.008},
-    {-0.014, -0.008, 0.991}
+    {1.000, 0.034, -0.002},
+    {0.034, 1.012, -0.004},
+    {-0.002, -0.004, 0.989}
 };
 
 
@@ -35,7 +35,7 @@ Mesh mesh(3, "0013A20041BEEF1E", &atm, &windVane, &sail, &rudder, &esc, &magneto
 void setup() {
   Serial.begin(115200);
   Wire.begin();
-  sd.start();
+  // sd.start();
   atm.start();
   windVane.start();
   sail.start(270);
