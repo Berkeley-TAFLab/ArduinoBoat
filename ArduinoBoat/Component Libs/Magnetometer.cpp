@@ -48,5 +48,5 @@ void Magnetometer::updateHeading()
     heading += 180;
     if (heading < 0) heading += 360;
     if (heading > 360) heading -= 360;
-    Serial.println(heading);
+    // Serial.println(heading);
 }

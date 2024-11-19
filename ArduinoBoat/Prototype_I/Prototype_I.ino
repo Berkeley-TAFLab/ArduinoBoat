@@ -22,7 +22,7 @@ float soft_iron[3][3] = {
 
 // SDCard sd(53);
 Atmosphere atm;
-WindVane windVane(-4120, 900, 1900, 2900);
+WindVane windVane(-4000, 1000, 2000, 2900);
 Sail sail(8);
 Rudder rudder(10);
 ESC esc(9);
@@ -54,6 +54,7 @@ void loop() {
   magnetometer.updateHeading();
   atm.updateData();
   windVane.getAngle(sail.currentSailPos);
+  windVane.currentAngle = map(windVane.currentAngle, 0, 360, 360, 0);
   if (control.stationKeeping) {
     sail.calculateStationPos(windVane.currentAngle);
   } else {

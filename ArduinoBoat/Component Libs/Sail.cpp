@@ -16,6 +16,7 @@ Sail::Sail(int pin)
 void Sail::start(int range)
 {
     sailServo.attach(pinNumber, 544 + (2400 - 544) * (1 - (float) (180 / range)), 2400);
+    // sailServo.attach(pinNumber);
 }
 
 void Sail::calculateStationPos(int currentAngle)

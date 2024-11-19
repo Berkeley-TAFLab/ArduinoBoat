@@ -43,7 +43,7 @@ void WindVane::getAngle(int currentSailPos)
     } else if (currentAngle > 360) {
       currentAngle -= 360;
     }
-    // Serial.println(currentAngle);
+    Serial.println(currentAngle);
 }
 
 int WindVane::calibrateEncoder(int rawValue, int q1, int q2, int q3)
