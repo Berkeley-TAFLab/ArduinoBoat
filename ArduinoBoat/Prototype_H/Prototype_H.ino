@@ -22,7 +22,7 @@ float soft_iron[3][3] = {
 
 // SDCard sd(53);
 Atmosphere atm;
-WindVane windVane(-200, 900, 1900, 2900);
+WindVane windVane(-2110, 900, 1900, 2900);
 Sail sail(8);
 Rudder rudder(10);
 ESC esc(9);
