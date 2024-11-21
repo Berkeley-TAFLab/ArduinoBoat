@@ -1,2 +1,1 @@
-# ArduinoBoat
-DO NOT PULL FOR NOW!
+# Software and Electronics System for TAFLab Arduino Sail Drone
