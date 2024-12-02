@@ -5,6 +5,296 @@
 	(uuid "82b903ed-1525-4363-aed2-41ebb396bca7")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Device:LED"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:R"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:R_Potentiometer"
 			(pin_names
 				(offset 1.016) hide)
@@ -3190,6 +3480,270 @@
 				)
 			)
 		)
+		(symbol "TAFLab-Symbol-Library:PowerSwitch"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PowerSwitch_1_1"
+				(rectangle
+					(start 0 7.62)
+					(end 12.7 -7.62)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(text "On/Off SWITCH"
+					(at 8.89 0 900)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(pin input line
+					(at -2.54 3.81 0)
+					(length 2.54)
+					(name "VIn"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -2.54 0 0)
+					(length 2.54)
+					(name "VOut"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -2.54 -3.81 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "TAFLab-Symbol-Library:PushButton"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PushButton_1_1"
+				(rectangle
+					(start 2.54 6.35)
+					(end 15.24 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(text "Button"
+					(at 8.89 2.54 900)
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(pin input line
+					(at 0 3.81 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 0 0)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 17.78 3.81 180)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 17.78 0 180)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "TAFLab-Symbol-Library:XBeeBreakout"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -3339,6 +3893,12 @@
 		(uuid "10d1d0f9-2585-4fc3-9ca0-a13da049af57")
 	)
 	(junction
+		(at 90.17 123.19)
+		(diameter 0)
+		(color 255 0 0 1)
+		(uuid "20593745-7b41-4dc6-9017-85a5196878cc")
+	)
+	(junction
 		(at 193.04 49.53)
 		(diameter 0)
 		(color 255 0 0 1)
@@ -3361,6 +3921,12 @@
 		(diameter 0)
 		(color 255 0 0 1)
 		(uuid "713b9205-5150-410a-9a26-d91bfdbb9bcd")
+	)
+	(junction
+		(at 185.42 124.46)
+		(diameter 0)
+		(color 0 0 0 1)
+		(uuid "8e87fa81-2eb1-4f26-a605-730a0fcef73a")
 	)
 	(junction
 		(at 190.5 50.8)
@@ -3392,9 +3958,23 @@
 		(color 255 0 0 1)
 		(uuid "cee1a5bc-c310-480d-b341-1f1805c981d1")
 	)
+	(junction
+		(at 92.71 124.46)
+		(diameter 0)
+		(color 0 0 0 1)
+		(uuid "f1c878e7-a8d8-4274-8d72-58618bfc65b1")
+	)
 	(no_connect
 		(at 166.37 129.54)
 		(uuid "48d342ae-dd0d-46e1-8c93-742cc4c6ff55")
+	)
+	(no_connect
+		(at 193.04 130.81)
+		(uuid "75c6cd1f-2358-41f6-88fa-6566612ee163")
+	)
+	(no_connect
+		(at 124.46 129.54)
+		(uuid "a663d2fc-e0dc-468f-a646-d5aaf8451d01")
 	)
 	(no_connect
 		(at 168.91 129.54)
@@ -3403,6 +3983,10 @@
 	(no_connect
 		(at 100.33 138.43)
 		(uuid "d0bf0754-6945-43dd-87fc-e74ae4b0a5f6")
+	)
+	(no_connect
+		(at 127 129.54)
+		(uuid "f5cd2b9f-f3f7-4853-bb38-6fe9155000a5")
 	)
 	(wire
 		(pts
@@ -3515,7 +4099,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 124.46) (xy 193.04 124.46)
+			(xy 163.83 124.46) (xy 185.42 124.46)
 		)
 		(stroke
 			(width 0)
@@ -3577,6 +4161,28 @@
 			(type default)
 		)
 		(uuid "1ba3cd7d-33bd-4ab8-8834-d371a6f4735f")
+	)
+	(wire
+		(pts
+			(xy 205.74 152.4) (xy 200.66 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "1da34601-1d78-4c12-8af9-dd218884634d")
+	)
+	(wire
+		(pts
+			(xy 189.23 127) (xy 189.23 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 0 1)
+		)
+		(uuid "215beefa-e145-40d2-9d48-57b46563b24f")
 	)
 	(wire
 		(pts
@@ -3644,6 +4250,17 @@
 	)
 	(wire
 		(pts
+			(xy 200.66 152.4) (xy 200.66 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "3a970de4-29ea-4387-a13d-d59d7ca518ef")
+	)
+	(wire
+		(pts
 			(xy 106.68 49.53) (xy 118.11 49.53)
 		)
 		(stroke
@@ -3685,6 +4302,17 @@
 			(color 194 194 0 1)
 		)
 		(uuid "4df6f8b8-9565-45aa-bce0-9db37a207824")
+	)
+	(wire
+		(pts
+			(xy 86.36 49.53) (xy 86.36 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 0 1)
+		)
+		(uuid "4f273f12-38fd-4e43-915e-bfece3519e9c")
 	)
 	(wire
 		(pts
@@ -3763,6 +4391,28 @@
 	)
 	(wire
 		(pts
+			(xy 180.34 120.65) (xy 180.34 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 0 1)
+		)
+		(uuid "5d6c6109-d695-489e-aca7-87a00170f1c5")
+	)
+	(wire
+		(pts
+			(xy 180.34 127) (xy 189.23 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 0 1)
+		)
+		(uuid "60c9bbbf-1dc0-4e0f-90dc-e0eec2728483")
+	)
+	(wire
+		(pts
 			(xy 101.6 53.34) (xy 113.03 53.34)
 		)
 		(stroke
@@ -3771,6 +4421,17 @@
 			(color 132 0 0 1)
 		)
 		(uuid "617e204b-a598-4fc2-a255-b233a3c796c9")
+	)
+	(wire
+		(pts
+			(xy 73.66 43.18) (xy 74.93 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "6236e17d-ce84-48d2-b1e9-521b98856fa1")
 	)
 	(wire
 		(pts
@@ -3892,6 +4553,17 @@
 	)
 	(wire
 		(pts
+			(xy 81.28 123.19) (xy 81.28 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 0 1)
+		)
+		(uuid "731b9711-187a-4a15-9266-7c0f74b6e323")
+	)
+	(wire
+		(pts
 			(xy 104.14 48.26) (xy 104.14 54.61)
 		)
 		(stroke
@@ -3911,6 +4583,28 @@
 			(color 0 0 0 1)
 		)
 		(uuid "8563b5b5-497a-4996-afe7-7385abc55826")
+	)
+	(wire
+		(pts
+			(xy 81.28 49.53) (xy 86.36 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 0 1)
+		)
+		(uuid "895cf5aa-7e6d-4ba4-aafb-4dccef5fc173")
+	)
+	(wire
+		(pts
+			(xy 185.42 124.46) (xy 193.04 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "8b035715-7e53-4edc-b723-cc11f453df54")
 	)
 	(wire
 		(pts
@@ -3958,6 +4652,28 @@
 	)
 	(wire
 		(pts
+			(xy 92.71 124.46) (xy 73.66 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "99703bbe-e34b-4d24-b0b6-cfef6bcff484")
+	)
+	(wire
+		(pts
+			(xy 73.66 124.46) (xy 73.66 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "9a45ba8a-f873-4bf0-8d60-a411574eeed9")
+	)
+	(wire
+		(pts
 			(xy 99.06 129.54) (xy 99.06 120.65)
 		)
 		(stroke
@@ -3966,6 +4682,17 @@
 			(color 194 194 0 1)
 		)
 		(uuid "9a502fde-5cc1-42e7-ad8a-a96019367375")
+	)
+	(wire
+		(pts
+			(xy 90.17 123.19) (xy 81.28 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 0 1)
+		)
+		(uuid "9db0a153-b6a4-4903-a8a0-e9cc6d964181")
 	)
 	(wire
 		(pts
@@ -4079,6 +4806,17 @@
 	)
 	(wire
 		(pts
+			(xy 205.74 149.86) (xy 205.74 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "c810eb34-fc1a-49a7-a10d-714b236063a4")
+	)
+	(wire
+		(pts
 			(xy 210.82 50.8) (xy 210.82 124.46)
 		)
 		(stroke
@@ -4178,6 +4916,17 @@
 	)
 	(wire
 		(pts
+			(xy 205.74 125.73) (xy 205.74 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 0 1)
+		)
+		(uuid "d85a0690-df89-46ca-a2f7-a4ea4e4dc6a1")
+	)
+	(wire
+		(pts
 			(xy 161.29 43.18) (xy 161.29 50.8)
 		)
 		(stroke
@@ -4219,6 +4968,17 @@
 			(color 255 0 0 1)
 		)
 		(uuid "df6b0a78-d018-4f67-a0ef-0cdcfb8bedb0")
+	)
+	(wire
+		(pts
+			(xy 82.55 43.18) (xy 82.55 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "e1d8d220-38bd-47a5-857e-5ae361967b86")
 	)
 	(wire
 		(pts
@@ -4265,6 +5025,28 @@
 	)
 	(wire
 		(pts
+			(xy 187.96 125.73) (xy 205.74 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 0 1)
+		)
+		(uuid "ebf21a5d-2ab2-4957-bc8d-eced63fce976")
+	)
+	(wire
+		(pts
+			(xy 187.96 120.65) (xy 187.96 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 0 1)
+		)
+		(uuid "edab368a-fe3b-4b97-ad7f-cfd3de5985f0")
+	)
+	(wire
+		(pts
 			(xy 143.51 49.53) (xy 143.51 40.64)
 		)
 		(stroke
@@ -4298,6 +5080,17 @@
 	)
 	(wire
 		(pts
+			(xy 185.42 124.46) (xy 185.42 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "f70e1a07-67ac-442c-b5d1-0cc4f0810aa2")
+	)
+	(wire
+		(pts
 			(xy 163.83 49.53) (xy 143.51 49.53)
 		)
 		(stroke
@@ -4307,10 +5100,66 @@
 		)
 		(uuid "fec579d0-98ae-481f-993e-4c606343fc38")
 	)
-	(text_box "Components:\n- Arduino Mega R3\n- Joystick\n- XBee\n- Potentiometer\n- Keypad\n- LCD\n- CLK\n- SD Module\n- GPS"
+	(rectangle
+		(start 231.394 144.78)
+		(end 242.57 147.32)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 56270826-e5d1-4bc9-bac3-9aa391921a56)
+	)
+	(rectangle
+		(start 231.394 150.876)
+		(end 233.934 153.416)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 649b3015-888f-42ac-a459-f13a5fd8afce)
+	)
+	(rectangle
+		(start 231.394 141.986)
+		(end 258.064 155.956)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 255 255 194 1)
+		)
+		(uuid a70c410d-c862-4848-80f4-c50386d943d0)
+	)
+	(text_box "10k ohm pull-down resistor"
 		(exclude_from_sim no)
-		(at 16.51 149.86 0)
-		(size 53.34 44.45)
+		(at 54.61 39.37 0)
+		(size 17.78 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify left top)
+		)
+		(uuid "1d836587-0aa5-4fa7-b126-89877cfc9327")
+	)
+	(text_box "Components:\n- Arduino Mega R3\n- Joystick\n- XBee\n- Potentiometer\n- Keypad\n- LCD\n- CLK\n- SD Module\n- GPS\n\nTO-DO:\n- On/Off switch\n- Reset button\n- LED indicator"
+		(exclude_from_sim no)
+		(at 13.97 130.81 0)
+		(size 58.42 64.77)
 		(stroke
 			(width 0)
 			(type default)
@@ -4326,6 +5175,36 @@
 			(justify left top)
 		)
 		(uuid "eefe4637-a137-4eaf-a471-34b3398eaf33")
+	)
+	(text "7V Battery"
+		(exclude_from_sim no)
+		(at 245.11 149.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "2cecefdf-b8a5-4a51-b541-0b67943952b2")
+	)
+	(text "GND"
+		(exclude_from_sim no)
+		(at 232.664 152.654 0)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+		)
+		(uuid "4c5dc06c-76b0-4cdb-8297-3eb15571e48d")
+	)
+	(text "On/Off Switch Vin\n"
+		(exclude_from_sim no)
+		(at 236.982 146.304 0)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+		)
+		(uuid "e90b6062-21bb-42fb-91ba-56f14053b68b")
 	)
 	(symbol
 		(lib_id "TAFLab-Symbol-Library:Keypad12Key")
@@ -4419,10 +5298,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "54f821e1-e510-44a3-9356-3a132d0a23ef")
 		(property "Reference" "U2"
-			(at 177.8 140.9699 90)
+			(at 176.784 141.732 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4485,6 +5363,76 @@
 			(project "TAFLab Controller"
 				(path "/82b903ed-1525-4363-aed2-41ebb396bca7"
 					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 205.74 138.43 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "741efb29-3085-4b02-9836-99940dbb9909")
+		(property "Reference" "D1"
+			(at 209.55 138.7474 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 209.55 141.2874 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_THT:LED_D3.0mm_Horizontal_O1.27mm_Z10.0mm"
+			(at 205.74 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 205.74 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 205.74 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4e64de3f-f489-4258-89dd-48851daf5fb0")
+		)
+		(pin "2"
+			(uuid "6631116d-d754-4eab-8735-b56bb40ef761")
+		)
+		(instances
+			(project "TAFLab Controller"
+				(path "/82b903ed-1525-4363-aed2-41ebb396bca7"
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -4566,6 +5514,140 @@
 			(project "TAFLab Controller"
 				(path "/82b903ed-1525-4363-aed2-41ebb396bca7"
 					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 205.74 146.05 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "836bd555-9075-498d-9752-db4b40d723a4")
+		(property "Reference" "R2"
+			(at 202.692 146.304 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220"
+			(at 209.55 146.812 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 207.518 146.05 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 205.74 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 205.74 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "90deedc0-be8c-4c4f-8f78-a3ed1f2f42d3")
+		)
+		(pin "1"
+			(uuid "25354b3e-6269-40e2-824e-051533db63a8")
+		)
+		(instances
+			(project "TAFLab Controller"
+				(path "/82b903ed-1525-4363-aed2-41ebb396bca7"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 78.74 43.18 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "89809aca-864c-49ab-a7bd-71e9571d9052")
+		(property "Reference" "R1"
+			(at 78.486 38.862 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 78.486 40.894 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 78.74 44.958 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 78.74 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 78.74 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "32942ccd-c0bf-4e98-aa76-bd8f131c74db")
+		)
+		(pin "1"
+			(uuid "f403e0aa-fe66-4d41-a901-d31287ea0bee")
+		)
+		(instances
+			(project "TAFLab Controller"
+				(path "/82b903ed-1525-4363-aed2-41ebb396bca7"
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -5210,6 +6292,154 @@
 			(project "TAFLab Controller"
 				(path "/82b903ed-1525-4363-aed2-41ebb396bca7"
 					(reference "U5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TAFLab-Symbol-Library:PushButton")
+		(at 86.36 39.37 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e756f235-670e-4786-a660-79a806044ca6")
+		(property "Reference" "U8"
+			(at 90.17 29.8449 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "~"
+			(at 90.17 31.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TAFLab-Footprint-Library:PushButton"
+			(at 86.36 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 86.36 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 86.36 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2c59fa65-5507-43cc-8de9-0729041d6e9e")
+		)
+		(pin "2"
+			(uuid "acae2f47-34b2-4868-98c0-b51c63e99c4d")
+		)
+		(pin "4"
+			(uuid "ff358d16-50a7-4d31-b33a-50458f42aaaa")
+		)
+		(pin "3"
+			(uuid "6008f91e-5bf9-4bce-8296-654d6f7132b8")
+		)
+		(instances
+			(project "TAFLab Controller"
+				(path "/82b903ed-1525-4363-aed2-41ebb396bca7"
+					(reference "U8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TAFLab-Symbol-Library:PowerSwitch")
+		(at 189.23 133.35 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f4780f50-1573-41c6-be93-4e4cdec6d231")
+		(property "Reference" "U6"
+			(at 197.358 141.986 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 196.85 140.97 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 189.23 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 189.23 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 189.23 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "30116684-ad78-4a5d-b41e-d617b007191c")
+		)
+		(pin "1"
+			(uuid "63c0ff50-c4dd-495c-80a9-35a09ce58a43")
+		)
+		(pin "2"
+			(uuid "6ce21235-294e-4dc0-ab01-8899febdd134")
+		)
+		(instances
+			(project "TAFLab Controller"
+				(path "/82b903ed-1525-4363-aed2-41ebb396bca7"
+					(reference "U6")
 					(unit 1)
 				)
 			)

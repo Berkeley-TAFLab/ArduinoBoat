@@ -1,4 +1,4 @@
-23219488697839017
+23229891982653282
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -89110,6 +89110,27 @@ DS18B20_Water_Temp_Sensor
 3
 3
 TAFLab-Footprint-Library
+Default2Pin
+
+
+0
+2
+2
+TAFLab-Footprint-Library
+Default3Pin
+
+
+0
+3
+3
+TAFLab-Footprint-Library
+Default4Pin
+
+
+0
+4
+4
+TAFLab-Footprint-Library
 GT-U7_GPS
 
 
@@ -89152,12 +89173,26 @@ Keypad
 7
 7
 TAFLab-Footprint-Library
-LIS3MDL_Magnometer
+LIS3MDL_Magnetometer
 
 
 0
 6
 6
+TAFLab-Footprint-Library
+LM2596
+
+
+0
+0
+0
+TAFLab-Footprint-Library
+MCP3008
+
+
+0
+16
+16
 TAFLab-Footprint-Library
 MPU6050_IMU_Accelerometer
 
@@ -89186,6 +89221,13 @@ PushButton
 0
 4
 4
+TAFLab-Footprint-Library
+RaspberryPi_4
+RaspberryPi 2
+CONN
+0
+40
+40
 TAFLab-Footprint-Library
 RudderConnector
 

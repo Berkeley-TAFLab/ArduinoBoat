@@ -3673,7 +3673,7 @@
 				)
 			)
 		)
-		(symbol "TAFLab-Symbol-Library:LISM3DL_Magnometer"
+		(symbol "TAFLab-Symbol-Library:LIS3MDL_Magnetometer"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3720,7 +3720,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "LISM3DL_Magnometer_1_1"
+			(symbol "LIS3MDL_Magnetometer_1_1"
 				(rectangle
 					(start 1.27 3.81)
 					(end 8.89 -11.43)
@@ -3732,7 +3732,7 @@
 						(type background)
 					)
 				)
-				(text "LIS3MDL (Magnometer)"
+				(text "LIS3MDL (Magnetometer)"
 					(at 7.62 -3.556 900)
 					(effects
 						(font
@@ -5512,12 +5512,6 @@
 		(uuid "c9aab67b-c347-48b9-96e5-e96cb92b4e52")
 	)
 	(junction
-		(at 102.87 137.16)
-		(diameter 0)
-		(color 0 0 0 1)
-		(uuid "c9ecafb5-06d7-4e6f-bb11-c7f063fce341")
-	)
-	(junction
 		(at 87.63 168.91)
 		(diameter 0)
 		(color 0 0 0 1)
@@ -6381,17 +6375,6 @@
 			(type default)
 		)
 		(uuid "481a4851-e759-4ed7-9426-d29700b59720")
-	)
-	(wire
-		(pts
-			(xy 102.87 137.16) (xy 102.87 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 0 0 0 1)
-		)
-		(uuid "482cc250-28bc-4911-b1e3-7fbf8eec11b6")
 	)
 	(wire
 		(pts
@@ -8623,10 +8606,10 @@
 		)
 		(uuid f946782e-ec89-42ea-808b-f63b79be5936)
 	)
-	(text_box "NOTES\n\nI2C:\n\n	Inside Boat:\n		- LIS3MDL (Magnetometer)\n		- MPU6050 IMU (Accelerometer)\n		- INA 219 (Battery Power Sensor)\n		- DS3231 (CLK Module)\n\n	Outside Boat:\n		- AS5600 (Magnetic Encoder - Windvane)\n		- BME280 (PHT)\n\nUArt: \n\n	Inside Boat:\n	- GT-U7 (GPS)\n\n	Outside Boat:\n	- Digi Xbee3 (Transmitter/Receiver) \n\nDigital:\n\n	- 45 kg Servo (Rudder)\n	- 45 kg Servo (Sail)\n	- 40A ESC (Propeller)\n	- DS18B20 (Water Temperature Sensor)\n\nAnalog:\n\n	- HW-038 (Water Level Sensor)\n\nSPI:\n\n	- Micro SD Card Read/Write Module\n\nMisc:\n\n	- LM2596S (Voltage Regulator/Detector)"
+	(text_box "NOTES\n\nI2C:\n\n	Inside Boat:\n		- LIS3MDL (Magnetometer)\n		- MPU6050 IMU (Accelerometer)\n		- INA 219 (Battery Power Sensor)\n		- DS3231 (CLK Module)\n\n	Outside Boat:\n		- AS5600 (Magnetic Encoder - Windvane)\n		- BME280 (PHT)\n\nUArt: \n\n	Inside Boat:\n	- GT-U7 (GPS)\n\n	Outside Boat:\n	- Digi Xbee3 (Transmitter/Receiver) \n\nDigital:\n\n	- 45 kg Servo (Rudder)\n	- 45 kg Servo (Sail)\n	- 40A ESC (Propeller)\n	- DS18B20 (Water Temperature Sensor)\n\nAnalog:\n\n	- HW-038 (Water Level Sensor)\n\nSPI:\n\n	- Micro SD Card Read/Write Module\n\nMisc:\n\n	- LM2596S (Voltage Regulator/Detector)\n\nTo-Do:\n- 1 more water level sensor\n- Extra I2C ports\n- On/Off Switch\n- Reset Button\n- LED Indicator\n- Move magnetometer out\n- Wind Speed Sensor"
 		(exclude_from_sim no)
-		(at 15.24 110.49 0)
-		(size 57.15 85.09)
+		(at 13.97 114.3 0)
+		(size 57.15 81.28)
 		(stroke
 			(width 0)
 			(type default)
@@ -8637,7 +8620,7 @@
 		)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 1.016 1.016)
 				(thickness 0.254)
 				(bold yes)
 			)
@@ -10124,6 +10107,88 @@
 		)
 	)
 	(symbol
+		(lib_id "TAFLab-Symbol-Library:LIS3MDL_Magnetometer")
+		(at 193.04 48.26 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "773111e3-71b6-422d-b24b-8ab7487d469e")
+		(property "Reference" "U2"
+			(at 205.74 42.5449 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "~"
+			(at 205.74 44.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TAFLab-Footprint-Library:LIS3MDL_Magnometer"
+			(at 193.04 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 193.04 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 193.04 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "65370631-dc8f-48a8-ab9d-d3ce314187f3")
+		)
+		(pin "5"
+			(uuid "b57bc2f6-e52a-4794-ac74-8b55c3ebe074")
+		)
+		(pin "6"
+			(uuid "cbdf85d9-dbb3-42f2-81c4-5de7a786e7fa")
+		)
+		(pin "2"
+			(uuid "d6991604-20ac-4299-a26a-ba2dd31e0e00")
+		)
+		(pin "3"
+			(uuid "9082b0ca-a904-4f17-966c-f1f85cfb596d")
+		)
+		(pin "1"
+			(uuid "07df26d9-7a82-441d-98fa-4a9f406a17eb")
+		)
+		(instances
+			(project "TAFLab Sensors"
+				(path "/596b9502-859d-467d-9cf7-4ff1f1b1dcd6"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "TAFLab-Symbol-Library:AS5600_Magnetic_Encoder_Windvane")
 		(at 86.36 181.61 0)
 		(unit 1)
@@ -10200,88 +10265,6 @@
 			(project "TAFLab Sensors"
 				(path "/596b9502-859d-467d-9cf7-4ff1f1b1dcd6"
 					(reference "U5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "TAFLab-Symbol-Library:LISM3DL_Magnometer")
-		(at 193.04 48.26 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9669472b-b3c5-46d4-8cfa-2dfe8de4b775")
-		(property "Reference" "U2"
-			(at 205.74 42.5449 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "~"
-			(at 205.74 44.45 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "TAFLab-Footprint-Library:LIS3MDL_Magnometer"
-			(at 193.04 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 193.04 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 193.04 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "52a36535-7c27-4fd7-8bab-8be6e931d5ff")
-		)
-		(pin "5"
-			(uuid "66016afc-1b2a-43e5-808e-8fd41e737d31")
-		)
-		(pin "1"
-			(uuid "2dd1046d-3b6e-4a12-9905-c44649ad8856")
-		)
-		(pin "2"
-			(uuid "a8c6f4ce-7db9-48a2-8b51-0683c8cdf472")
-		)
-		(pin "4"
-			(uuid "094fac2d-4a69-46e5-aa15-03b5f132f723")
-		)
-		(pin "3"
-			(uuid "76a72ab6-505c-4628-a6d4-0ea8db53d674")
-		)
-		(instances
-			(project "TAFLab Sensors"
-				(path "/596b9502-859d-467d-9cf7-4ff1f1b1dcd6"
-					(reference "U2")
 					(unit 1)
 				)
 			)
