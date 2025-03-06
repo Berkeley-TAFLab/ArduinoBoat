@@ -1,4 +1,4 @@
-# Software and Electronics for TAFLab Arduino Drone
+# Software for TAFLab Arduino Drone
 
 Contributors: Professor Reza Alam, Evan Kuo, Arsh Khan, and Nick Bui
 
